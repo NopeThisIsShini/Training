@@ -1,0 +1,1 @@
+inset -- top 0, buttom -0, right-0, left-0

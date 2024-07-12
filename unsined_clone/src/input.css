@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+
+
+
+.custom1 {
+    @apply text-[62.1248px] font-normal max-sm:max-w-[150px] overflow-hidden tracking-[-4px] text-ellipsis whitespace-nowrap max-sm:truncate
+}
+
+.custom3 {
+    @apply flex justify-center text-white border-[1px] rounded-[60px] border-[#84889f] items-center px-[12px] py-[12px] h-[38px]
+}
+
+@tailwind utilities;
+
+@layer components {
+    .rotation {
+        -webkit-animation: spin 9s linear infinite;
+        -moz-animation: spin 9s linear infinite;
+        animation: spin 9s linear infinite;
+    }
+
+    @-moz-keyframes spin {
+        100% {
+            -moz-transform: rotate(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin {
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    .custom2 {
+
+        font-size: 18px;
+        color: white;
+        font-size: normal;
+        font-weight: 400;
+    }
+    .wave{
+        animation: animate 30s linear infinite;
+        z-index: 1440;
+        opacity: 1;
+        animation-delay: 0s;
+        bottom: 0;
+    }
+    @keyframes animate {
+        0%{
+            background-position-x: 0;
+        }
+        100%{
+            background-position-x: 1440px;
+        }
+        
+    }
+}
