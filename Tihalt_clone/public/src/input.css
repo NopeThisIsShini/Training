@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+/* for nav bar menu in mobile  */
+/* description elements  */
+.card_items{
+    @apply px-[20px] pb-[20px] basis-[23%] my-[10px] text-center max-lg:basis-[100%] 
+}
+/* //first two items will take 50% of the container width, rest adjust in next lines as outer class is display flex   */
+.card_items1{
+    @apply px-[20px] pb-[30px]  flex basis-[50%] items-start max-sm:basis-[100%] max-lg:m-auto 
+}
+.card1_heading{
+    @apply text-white font-bold 
+}
+.card1_p{
+    @apply text-[#BABDFF] mb-[20px] 
+}
+.card1_img{
+    @apply mr-6  px-[20px] py-[30px] shrink-0
+}
+.text{
+    @apply grow
+}
+
+/* flag portion || contact us || */
+/* contact detials  */
+.contact_details{
+    @apply text-yellow-400 text-xl font-semibold hover:text-black border-black hover:border-b-2
+}
+.flag{
+    @apply p-[50px_20px_0px] basis-[100%] md:basis-[33.333%] items-start
+}
+.flag_description{
+    @apply p-[0px_20px_30px]
+}
+.flag_icon{
+   @apply flex flex-row p-[0px_20px_25px] space-x-4
+}
+/*|| footer list element style  ||*/
+.footer_list{
+    @apply pl-[28px] pb-[15px] mb-[15px] text-[12px]
+}
+.description{
+    @apply text-[12px]
+}
+.flag_head{
+    @apply text-[26px] text-[#383838] font-semibold
+}
+
+.footer_head{
+    @apply mb-[35px] font-bold text-[12px]
+}
+/* // footer items  */
+.footer_items{
+    @apply px-[20px] pb-[60px] basis-[33.333%] my-[10px] items-start max-lg:basis-[100%] text-white space-y-6
+}
+@tailwind utilities;

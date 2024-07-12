@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- font-awesome icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind css link -->
+  <link rel="stylesheet" href="src/output.css">
+  <!-- for menu bar of mobile screen -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+<style>
+    .nav-links {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+    }
+
+    .show-menu {
+      display: flex !important;
+      top: 198px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- || fixed icons ||  -->
+  <!-- right side chat button fixed   -->
+  <div class="fixed">
+    <button class="z-20 text-white fixed bottom-0 right-5 rounded-lg mr-1 mb-5 ">
+      <div class="p-3 rounded-full bg-[#EEAE20]">
+        <i class="fa fa-comments flex justify-between items-center" aria-hidden="true"></i>
+
+      </div>
+
+    </button>
+  </div>
+  <!-- left side whatsapp chat button fixed  -->
+  <div class="fixed">
+    <button class="z-20 text-white fixed bottom-0 left-5 rounded-lg ml-1 mb-5 ">
+      <div class="p-3 rounded-full bg-[#46C254]">
+        <i class="fa fa-whatsapp flex justify-between items-center" aria-hidden="true"></i>
+      </div>
+
+    </button>
+  </div>
+  <!-- for backgound image of home-page  -->
+  <div class="home bg-cover" style="background-image: url(bg-portfolio.jpg);">
+    <!-- outer div for nav and social handle  -->
+    <div class="fixed w-full top-0 z-50">
+      <!-- Social handle top most -->
+      <!-- Upper bar  -->
+      <div
+        class="contact_bar flex flex-row justify-between items-center px-[15px] text-white md:bg-[#232D4F] md:bg-opacity-[0.90] bg-[#222222] max-sm:flex-col max-sm:py-4">
+        <!-- mobile number call icon in upper nav bar  -->
+        <div class="mobile_number">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <a href="tel:+91 9611223984" class="hover:border-b-[2px] border-white "> +91 96 1122 3984</a>
+        </div>
+        <!-- email icon and email address && social address  -->
+        <div class="email_social-contact flex flex-row items-center max-sm:flex-col">
+          <div class="email ml-[28px] py-[10px] px-[19px]">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <a href="mailto:info@tihalt.com " class="hover:border-b-[2px] border-white"> info@tihalt.com</a>
+          </div>
+          <!-- social links  -->
+          <div class="social-contact ml-[10px] space-x-2 ">
+            <a href="https://www.facebook.com/tihalt/" target="_blank" title="facebook">
+              <i class="fa fa-facebook hover:text-yellow-400"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/tihalt-technologies/" target="_blank" title="linkedin">
+              <i class="fa fa-linkedin hover:text-yellow-400"></i>
+            </a>
+            <a href="https://twitter.com/TihaltTechno" target="_blank" title="twitter">
+              <i class="fa fa-twitter hover:text-yellow-400"></i>
+            </a>
+            <a href="https://www.instagram.com/tihalttechnologies/" target="_blank" title="instagram">
+              <i class="fa fa-instagram hover:text-yellow-400"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- nav bar -->
+      <header class="bg-black bg-opacity-[.85] ">
+        <nav class="flex justify-between items-center py-[20px]  text-[15px] max-w-[1320px] mx-auto ">
+          <div>
+            <img class="w-28 cursor-pointer"
+              src="https://i0.wp.com/tihalt.com/wp-content/uploads/2019/04/logo.png?fit=106%2C25&ssl=1" alt="...">
+          </div>
+          <div
+            class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full bg-gray-800  backdrop:blur-sm md:bg-transparent flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+              <li>
+                <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="index.html">Home</a>
+              </li>
+              <li>
+                <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="AboutUs.html">About
+                  Us</a>
+              </li>
+              <li>
+                <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Our Services</a>
+              </li>
+              <li>
+                <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Products</a>
+              </li>
+              <li>
+                <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Portfolio</a>
+              </li>
+              <li>
+                <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="ContactUs.html">Contact
+                  Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-6 ">
+            <button class="cursor-pointer bg-[#EEAE20] rounded-[4px] max-md:hidden px-[12px] py-[6px] ">REQUEST
+              QUOTE</button>
+            <ion-icon onclick="onToggleMenu(this)" name="menu"
+              class="text-3xl text-slate-50 border-[#222222] border-[2px] pr-[12px] cursor-pointer md:hidden"></ion-icon>
+          </div>
+        </nav>
+
+      </header>
+    </div>
+    <!-- contact us main portion  -->
+    <div class=" mx-auto px-[20px] py-[200px] ">
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="text-[45px] font-bold text-[#FFFFFF]">Contact Us</h1>
+        <i class="mt-[10px] text-[28px] text-white">Get Intouch</i>
+      </div>
+    </div>
+  </div>
+  <!-- contact section  -->
+  <div>
+    <!-- contact section  -->
+    <div class=" max-w-[1320px] max-md:mx-[10%] p-[60px_20px] flex flex-wrap justify-start mx-auto">
+      <!-- mobile contact  -->
+      <div class="mobile basis-[50%] px-[20px] pt-[50px] ">
+        <div class="px-[20px] pb-[25px]">
+          <i class="fa fa-phone text-xl" aria-hidden="true"></i>
+          <span class="text-[28px] font-bold ">Phone</span>
+        </div>
+        <div class="px-[20px] pb-[30px]">
+          <div class=" text-xl mb-[20px]"> Phone : <a class="contact_details" href="#">+91
+              96 1122 3984</a></div>
+        </div>
+      </div>
+      <!-- email details  -->
+      <div class="email px-[20px] pt-[50px] basis-[50%]">
+        <div class="px-[20px] pb-[25px] space-x-2 ">
+          <i class="fa fa-envelope-o text-xl" aria-hidden="true"></i>
+          <span class="text-[28px] font-bold">Email</span>
+        </div>
+        <div class="p-[0px_20px_30px] text-[16px]">
+          <div><a class="contact_details" href="#">info@tihalt.com</div></a>
+          <div class="mb-[10px]"><a class="contact_details" href="#">support@tihalt.com</div></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--|| form section ||-->
+  <div class="bg-[#F3F3F3]">
+    <div class="max-w-[1320px] mx-auto">
+      <div class="max-w-[760px] mx-auto pt-20">
+        <!-- //outer div  -->
+        <div class="max-w-[1320px] mx-auto max-md:mx-[10%] p-[0px_20px]">
+          <!-- heading part -->
+          <div class="px-[20px] pb-[30px]  flex flex-col justify-center items-center">
+            <h3 class="text-black text-[39px] font-semibold">Leave us your info</h3>
+            <span class="mt-[10px] text-[#747474]">and we will get back to you.</span>
+
+          </div>
+          <!-- line section  -->
+          <div class=" flex justify-center items-center px-[20px] pb-[70px]">
+            <div class=" w-[25px] h-[1px] bg-[#383838]"></div>
+          </div>
+          <!-- contact us form -->
+          <form action="#" class="contact-form p-[0px_20px_60px]">
+            <!-- grid use-case || basic information box -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="mb-[14px] px-[7px]">
+
+                <input type="text" id="name" class="px-[22px] py-[15px]  border rounded-md w-full"
+                  placeholder="Full Name*" required>
+              </div>
+              <div class="mb-[14px] px-[7px]">
+
+                <input type="email" id="email" class="px-[22px] py-[15px]  border rounded-md w-full"
+                  placeholder="Email*" required>
+
+              </div>
+              <div class="mb-[14px] px-[7px]">
+               
+                <input type="text" id="PhoneNumber" class="px-[22px] py-[15px] border rounded-md w-full"
+                  placeholder="Phone Number*" required>
+              </div>
+              <div class="mb-[14px] px-[7px]">
+               
+                <input type="text" id="subject" class="px-[22px] py-[15px]  border rounded-md w-full"
+                  placeholder="Subject*" required>
+              </div>
+
+            </div>
+            <!-- message box  -->
+            <div class="px-[22x] py-[18px]">
+
+              <textarea name="" id="message" rows="4" class="mt-1 p-2 border rounded-md w-full"
+                placeholder="Message*"></textarea>
+            </div>
+            <!-- submit button  -->
+            <div class="pb-[20px]">
+              <button type="submit"
+                class="bg-[#233C85] text-white font-bold px-[33px] py-[15px] hover:bg-blue-600 w-full mb-20px">SUBMIT
+                NOW</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- || column content flag-office info || -->
+  <div class="bg-white">
+    <!-- outer main div  -->
+    <div class="max-w-[1320px] mx-auto max-md:mx-[10%] flex flex-wrap justify-start p-[0px_20px] ">
+      <!-- fisrt box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/india.webp" alt="">
+          <p class="flag_head">India</p>
+        </div>
+        <p class="flag_description">
+          No. 32, 38/1, 2nd Floor, Sri Ram Arcade, Near Bosch Office, Hosur Main Road, Bommanahalli, Bengaluru,
+          Karnataka 560068.
+        </p>
+      </div>
+      <!-- second box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/india.webp" alt="">
+          <p class="flag_head">India</p>
+        </div>
+        <p class="flag_description">
+          No.1300, 13th Cross, Indira Nagar,
+          Bangalore – 560008.
+        </p>
+      </div>
+      <!-- third box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/india.webp" alt="">
+          <p class="flag_head">India</p>
+        </div>
+        <p class="flag_description">
+          Software Technology Parks of India, Ministry of Comm. & IT, Govt. of India, Nehru Nagar (East), Bhilai,
+          Chhattisgarh – 490020
+        </p>
+      </div>
+      <!-- fourth box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/india.webp" alt="">
+          <p class="flag_head">India</p>
+        </div>
+        <p class="flag_description">
+          TOF -17 & 18, Surya Treasure Island Mall, Junwani Road, Bhilai, Chhattisgarh – 490020
+        </p>
+      </div>
+      <!-- fifth box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/india.webp" alt="">
+          <p class="flag_head">India</p>
+        </div>
+        <p class="flag_description">
+          Katare Complex, Luchki Para ,Drug, Chhattisgarh -491001
+        </p>
+      </div>
+      <!-- 6th box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/india.webp" alt="">
+          <p>India</p>
+        </div>
+        <p class="flag_description">
+          L-502/503 MegaCenter, Hadapsar, Pune, India
+        </p>
+      </div>
+      <!-- 7th box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/dubai.webp" alt="">
+          <p class="flag_head">Dubai</p>
+        </div>
+        <p class="flag_description">
+          3 Office 319 Al Kazim Building Hor Al Anz East Near Atrium Medical Care, Al Ittihad Road, Khubaisi, Dubai.
+        </p>
+      </div>
+      <!-- 8th box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/uk.webp" alt="">
+          <p class="flag_head">UK</p>
+        </div>
+        <p class="flag_description">
+          CBS Information Systems Ltd.
+          5, The Arena Stockley Park, Uxbridge, UB11 1AA, UK
+        </p>
+      </div>
+      <!-- 9th box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/scotland.webp" alt="">
+          <p class="flag_head">Scotland</p>
+        </div>
+        <p class="flag_description">
+          CWestpoint 4 Redheughs Rigg South Gyle Edinburgh EH12 9DQ, United Kingdom.
+        </p>
+      </div>
+      <!-- 10th box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/usa.webp" alt="">
+          <p class="flag_head">USA</p>
+        </div>
+        <p class="flag_description">
+          Central Business Solutions Inc.
+          37600 Central Ct, Ste 214, Newark, CA 94560 USA
+      </div>
+      <!-- 11th box  -->
+      <div class="flag">
+        <div class="flag_icon">
+          <img src="Images/flag/canada.webp" alt="">
+          <p class="flag_head">Canada</p>
+        </div>
+        <p class="flag_description">
+          CBS Information Systems Inc.
+          185-911 YATES STREET # 352 VICTORIA British Columbia V8V 4Y9, Canada
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="bg-[#202020]">
+    <!-- outer div-->
+    <div class=" px-[20px] py-[60px] max-w-[1320px] flex flex-wrap justify-around mx-auto">
+      <!-- first footer column -->
+      <div class="footer_items px-[30px]">
+        <img class="mb-[60px]" src="Images/nav_main/logo.webp" alt="">
+        <p class="mb-[10px] description">In Tihalt, everyone has a voice and the ability to propose projects directly to
+          the network. Anything you can
+          do.
+        </p>
+        <div class="flex flex-row space-x-2">
+          <i class="fa fa-facebook p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-twitter p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-youtube-play p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-linkedin p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-instagram p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-pinterest-p p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+        </div>
+        <div>
+          <h4 class="footer_head">INTERACTIVE WEB SOLUTIONS</h4>
+          <ul class="list-none ">
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Drupal Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">CMS Website Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Ecommerce Website Development</a> </li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Joomla Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Responsive Web Design</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Website Maintenance Services</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">WordPress Development</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- second footer column  -->
+      <div class="footer_items px-[30px]">
+        <!-- heading and description  -->
+        <div class="mb-[60px]">
+          <h4 class="footer_head">USEFUL LINKS</h4>
+          <ul>
+            <li class="description"><a href="#">Mobile Application Development</a></li>
+            <li class="description"><a href="#">Best Digital Marketing Copany in Bangalore</a></li>
+            <li class="description"><a href="#">Website Development Service</a></li>
+            <li class="description"><a href="#">Creative Communications</a></li>
+            <li class="description"><a href="#">Graphic design company in bangalore</a></li>
+            <li class="description"><a href="#">SEO Servie in bangalore</a></li>
+            <li class="description"><a href="#">Terms and conditions</a></li>
+            <li class="description"><a href="#">Refund and cancellation policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer_head">DIGITAL MARKETING</h6>
+            <ul>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Link Building
+                  Services</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">SEO
+                  Copywriting</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">PPC Company
+                  Bangalore</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Search Engine
+                  Marketing</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Social Media
+                  Marketing</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Content
+                  Writing</a></li>
+            </ul>
+        </div>
+      </div>
+      <!-- third footer column  -->
+      <div class="footer_items px-[30px]">
+        <h4 class="footer_head">GET TOUCH WITH US</h4>
+        <div class="description">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          No. 32, 38/1, 2nd Floor, Sri Ram Arcade, Near Bosch Office, Hosur
+          Main Road, Bommanahalli, Bengaluru, Karnataka 560068.
+        </div>
+        <!-- mobile and email  -->
+        <div class="mb-[10px] flex flex-col description">
+          <i class="fa fa-envelope-o" aria-hidden="true">info@tihalt.com.</i> <br>
+          <i class="fa fa-phone" aria-hidden="true">+91 96 1122 3984</i>
+        </div>
+        <div>
+          <h4 class="footer_head">SOFTWARE DEVELOPMENT</h4>
+          <ul>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Mobile Application
+                Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Application
+                development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Interactive
+                Application Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Custom Software
+                Development/ Maintenance</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Enterprise solution
+                development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">ERP solutions &
+                support</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer copyright portion  -->
+  <div class="bg-[#202020]">
+    <div class="max-w-[1320px] mx-auto text-[#838383] py-[38px] px-[20px] flex justify-center items-center">Copyright ©
+      2016-2023 Tihalt Technosoft Private Limited.</div>
+  </div>
+  <script src="/public/js/app.js"></script>
+  <script>
+    function onToggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('show-menu');
+    }
+  </script>
+
+</body>
+
+</html>

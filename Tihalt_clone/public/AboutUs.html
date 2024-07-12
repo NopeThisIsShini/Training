@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tihalt Technologies - Get Intouch with Web Development Company</title>
+    <!-- font-awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="src/output.css">
+    <!-- for menu bar of mobile screen -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<style>
+    .nav-links {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .nav-links {
+            display: flex;
+        }
+    }
+
+    .show-menu {
+        display: flex !important;
+        top: 198px;
+        
+    }
+</style>
+<!-- Greensock -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script> -->
+</head>
+
+
+<body>
+    <!-- || fixed icons ||  -->
+    <!-- right side chat button fixed   -->
+    <div class="fixed">
+        <button class="z-20 text-white fixed bottom-0 right-5 rounded-lg mr-1 mb-5 ">
+            <div class="p-3 rounded-full bg-[#EEAE20]">
+                <i class="fa fa-comments flex justify-between items-center" aria-hidden="true"></i>
+
+            </div>
+
+        </button>
+    </div>
+    <!-- left side whatsapp chat button fixed  -->
+    <div class="fixed">
+        <button class="z-20 text-white fixed bottom-0 left-5 rounded-lg ml-1 mb-5 ">
+            <div class="p-3 rounded-full bg-[#46C254]">
+                <i class="fa fa-whatsapp flex justify-between items-center" aria-hidden="true"></i>
+            </div>
+
+        </button>
+    </div>
+    <div class="bg-scroll bg-center" style="background-image: url('Images/Background/about_bg.jpg')">
+        <!-- outer div for nav and social handle  -->
+        <div class="fixed w-full top-0 z-50">
+            <!-- Social handle top most -->
+          <!-- Upper bar  -->
+          <div class="contact_bar flex flex-row justify-between items-center px-[15px] text-white md:bg-[#232D4F] md:bg-opacity-[0.90] bg-[#222222] max-sm:flex-col max-sm:py-4">
+            <!-- mobile number call icon in upper nav bar  -->
+            <div class="mobile_number">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <a href="tel:+91 9611223984" class="hover:border-b-[2px] border-white "> +91 96 1122 3984</a>
+            </div>
+            <!-- email icon and email address && social address  -->
+            <div class="email_social-contact flex flex-row items-center max-sm:flex-col">
+              <div class="email ml-[28px] py-[10px] px-[19px]">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <a href="mailto:info@tihalt.com " class="hover:border-b-[2px] border-white"> info@tihalt.com</a>
+              </div>
+              <!-- social links  -->
+              <div class="social-contact ml-[10px] space-x-2 ">
+                <a href="https://www.facebook.com/tihalt/" target="_blank" title="facebook">
+                  <i class="fa fa-facebook hover:text-yellow-400"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/tihalt-technologies/" target="_blank" title="linkedin">
+                  <i class="fa fa-linkedin hover:text-yellow-400"></i>
+                </a>
+                <a href="https://twitter.com/TihaltTechno" target="_blank" title="twitter">
+                  <i class="fa fa-twitter hover:text-yellow-400"></i>
+                </a>
+                <a href="https://www.instagram.com/tihalttechnologies/" target="_blank" title="instagram">
+                  <i class="fa fa-instagram hover:text-yellow-400"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- nav bar -->
+          <header class="bg-black bg-opacity-[.85] ">
+          <nav class="flex justify-between items-center py-[20px]  text-[15px] max-w-[1320px] mx-auto ">
+            <div>
+              <img class="w-28 cursor-pointer"
+                src="https://i0.wp.com/tihalt.com/wp-content/uploads/2019/04/logo.png?fit=106%2C25&ssl=1" alt="...">
+            </div>
+            <div
+              class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full bg-gray-800  backdrop:blur-sm md:bg-transparent flex items-center px-5">
+              <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                <li>
+                <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="AboutUs.html">About
+                    Us</a>
+                </li>
+                <li>
+                  <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Our Services</a>
+                </li>
+                <li>
+                  <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Products</a>
+                </li>
+                <li>
+                  <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Portfolio</a>
+                </li>
+                <li>
+                  <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Blog</a>
+                </li>
+                <li>
+                  <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="ContactUs.html">Contact
+                    Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex items-center gap-6 ">
+              <button class="cursor-pointer bg-[#EEAE20] rounded-[4px] max-md:hidden px-[12px] py-[6px] ">REQUEST
+                QUOTE</button>
+              <ion-icon onclick="onToggleMenu(this)" name="menu"
+                class="text-3xl text-slate-50 border-[#222222] border-[2px] pr-[12px] cursor-pointer md:hidden"></ion-icon>
+            </div>
+          </nav>
+  
+        </header>
+          </div>
+        <!-- about us || we provide the portion 1... -->
+        <div class=" mx-auto p-[200px_20px_40px] ">
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-[60px] font-bold text-[#FFFFFF]">About Us</h1>
+                <p class="mt-[10px] text-[15px] text-white">We provide the solution for business developmen</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- || about us || portion 2, we are regrated as ...  -->
+    <div class="bg-slate-50">
+        <!-- heading  -->
+        <div
+            class=" p-[0px_20px_30px] text-center max-w-[1320px] m-auto max-md:mx-[10%] text-[48px] text-[#1E3375] font-bold ">
+            <h1 class="mb-[20px]">“We are regarded as industry leaders
+                in digital strategy and solutions, focused solely on delivering great user experiences”</h1>
+        </div>
+
+        <!-- flex wrap with image and description  -->
+        <div class="flex flex-wrap  justify-center items-center max-w-[1320px] mx-auto max-md:mx-[10%]">
+
+            <!-- text || left section  -->
+            <div class="p-[0px_20px_30px] basis-[100%] md:basis-[50%]">
+                <div>
+                    <p>NEED to know how technology can bring you value? Never stop looking for better solutions to
+                        consult us. We design, develop and manage web-based enterprise solutions and mobile
+                        applications. <span class="font-bold text-orange-300">Tihalt Technologies</span> can make your
+                        business perform better, compete better, and generate more money. </p>
+                </div>
+                <div class="font-bold italic text-[#383838] text-[36px] mb-[20px]">
+                    <p>Quality, Usability, Security! Creative Web Solutions!
+                </div>
+                <div class="mb-[20px]">
+                    <p>Are all at the heart of our unique smart tools Our digital solutions support your business with
+                        innovative technology and user-centered design.</p>
+                </div>
+                <div class="mb-[20px]">
+                    <p>We support clients to reach more customers by bringing them online/Digital Space with <span
+                            class="font-bold text-[#666666]">Websites Development</span>, <span
+                            class="font-bold text-[#666666]">Digital Marketing</span>, and <span
+                            class="font-bold text-[#666666]">eCommerce Developments</span>.</p>
+                </div>
+            </div>
+
+            <div class="p-[0px_20px_30px] flex basis-[100%] md:basis-[50%]"><img
+                    src="Images/AboutUs/man-with-laptop.webp " alt=""></div>
+        </div>
+
+    </div>
+
+    <!-- || about us || portion 3, two image flex wrap right one disappear in mobile screen -->
+    <div class="" style="background-image: url(Images/AboutUs/bg2-half-service.jpg);">
+
+        <div class="flex flex-wrap">
+            <div class="basis-[50%] p-[60px] max-md:basis-[100%]">
+                <div class="text-white p-[0px_20px_30px]">
+                    <h1 class="font-bold text-[36px] mb-[20px]"> Digital Web Solutions that deliver! The Right Tools!!
+                        The Right Solution!!!</h1>
+                    <h2 class="text-3xl font-bold mb-[20px]">Who we are</h2>
+                </div>
+                <div class="p-[0px_20px_30px] text-[#CCCCCC]">
+                    <p class="mb-[20px] ">Tihalt is a full-service digital agency. We provide creative digital solutions
+                        to bring your
+                        products and services to a wider public. With our <span class="font-bold">branding</span> and
+                        <span class="font-bold">user-centered design</span>, customers are engaged and brand awareness
+                        grows. Our impressive client list trusts us to deliver creative, interactive experiences for
+                        their customers across the whole range of web and mobile applications.
+                    </p>
+                </div>
+
+
+            </div>
+            <!-- right image section  -->
+            <div class="basis-[50%] bg-cover bg-center h-auto max-md:[100%]"
+                style="background-image: url(Images/AboutUs/shutterstock_right.jpg);">
+
+
+            </div>
+
+        </div>
+    </div>
+    <!--|| Vision and mission || -->
+    <!--  -->
+    <div class="flex flex-wrap max-w-[1320px] mx-auto max-md:mx-[10%] py-[40px]">
+        <!-- vision ,left side  -->
+        <div class="basis-[100%] md:basis-[50%]">
+            <h2 class="text-4xl font-bold text-[#1E3375] p-[0px_20px_30px]">OUR VISION</h2>
+            <div class="p-[0px_20px_30px]">
+                <p class="mb-[20px] text-gray-700">
+                    Our vision to bring our clients into the modern era through innovation technologies.
+                    <strong class="font-semibold">Tihalt Technosoft Pvt. Ltd.</strong>, based in
+                    <strong class="font-semibold">Bangalore, India</strong>, we deliver web solutions and digital
+                    marketing
+                    services. We will engage in sustainable practices and anticipate the needs of our clients. We help
+                    clients enjoy life, by offering an affordable solution. Our team serves clients from <strong
+                        class="font-semibold">UK, Europe, USA</strong>..
+                </p>
+            </div>
+        </div>
+        <div class="basis-[100%] md:basis-[50%]">
+            <h2 class="text-4xl font-bold text-[#1E3375] p-[0px_20px_30px]">OUR MISSION</h2>
+            <div class="p-[0px_20px_30px]">
+                <p class="mb-[20px] text-gray-700>
+                    The foundations and aspirations of our business remain true to those established by our visionary
+                    founders, and their innovation and energy continue to be our inspiration. We always do the right
+                    thing.
+                    With <strong class=" font-semibold">Precision, Pace and Passion. Tihalt Technologies</strong>
+                    trusts
+                    each
+                    other and have fun winning together. We own and shape our future. We create sustainable growth. For
+                    All.
+                    Our passion and entrepreneurial culture will ensure that we deliver for our customers in quality and
+                    assurance – today and in the future.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Counter || map support project etc .... -->
+    <div style="background-image: url(Images/Background/AboutUs_map-bg.jpg)">
+        <div class="flex flex-wrap max-w-[1320px] mx-auto justify-center text-center py-[40px]">
+            <!-- count block 1 target 860 -->
+            <div class="basis-[25%] max-md:basis-[100%] p-[0px_20px_30px]">
+                <span class="counter text-6xl font-bold text-white" data-target="860">0</span> <i
+                    class="fa fa-plus text-white" aria-hidden="true"></i>
+                <p class="text-yellow-500">Satisfied Customers</p>
+            </div>
+            <!-- count block 2 target 28 -->
+            <div class="basis-[25%] max-md:basis-[100%] p-[0px_20px_30px]">
+                <span class="counter text-6xl font-bold text-white" data-target="28">0</span> <i
+                    class="fa fa-plus text-white" aria-hidden="true"></i>
+                <p class="text-yellow-500">Supported Countries</p>
+            </div>
+            <!-- count block 2 target 600 -->
+            <div class="basis-[25%] max-md:basis-[100%] p-[0px_20px_30px]">
+                <span class="counter text-6xl font-bold text-white" data-target="600">0</span> <i
+                    class="fa fa-plus text-white" aria-hidden="true"></i>
+                <p class="text-yellow-500">Delivered Projects</p>
+            </div>
+            <!-- count block 3 target 25 -->
+            <div class="basis-[25%] max-md:basis-[100%] p-[0px_20px_30px]">
+                <span class="counter text-6xl font-bold text-white" data-target="25">0</span> <i
+                    class="fa fa-plus text-white" aria-hidden="true"></i>
+                <p class="text-yellow-500">Software Products</p>
+            </div>
+        </div>
+    </div>
+    <!-- best of company || 4 icon  -->
+    <div class="bg-slate-50">
+        <!-- outer div  -->
+        <div class="flex flex-wrap max-w-[1320px] m-auto py-[60px] ">
+            <!-- first component  -->
+            <div class="basis-[25%] max-md:basis-[100%] p-[0px_20px_15px] text-center">
+                <i class="fa fa-globe text-white mb-[28px] p-[17px] rounded-[50%] w-[50px]  bg-[#1C4389]"
+                    aria-hidden="true"></i>
+                <h2 class="text-[#383838] font-semibold">BEST TARGET</h2>
+                <p>We Quickly generate exceptional Web Solutions via client-based architectures.</p>
+            </div>
+            <!-- second component  -->
+            <div class="basis-[25%] max-md:basis-[100%] p-[0px_20px_15px] text-center">
+                <i class="fa fa-users text-white mb-[28px] p-[17px] rounded-[50%] w-[50px]  bg-[#1C4389]"
+                    aria-hidden="true"></i>
+                <h2 class="text-[#383838] font-semibold">BEST SUPPORT</h2>
+                <p>We have in-house support team and tools to manage the different phases of services.</p>
+            </div>
+            <!-- third component -->
+            <div class="basis-[25%] max-md:basis-[100%] p-[0px_20px_15px] text-center">
+                <i class="fa fa-mobile text-white mb-[28px] p-[17px] rounded-[50%] w-[50px]  bg-[#1C4389]"
+                    aria-hidden="true"></i>
+                <h2 class="text-[#383838] font-semibold">CLASSIC SERVICE</h2>
+                <p>Our team is dedicated to providing the best Service in all aspects of the Project Scope.</p>
+
+            </div>
+            <!-- fourth component  -->
+            <div class="basis-[25%] max-md:basis-[100%] p-[0px_20px_15px] text-center">
+                <i class="fa fa-usd text-white mb-[28px] p-[17px] rounded-[50%] w-[50px]  bg-[#1C4389]"
+                    aria-hidden="true"></i>
+                <h2 class="text-[#383838] font-semibold">VALUE OF MONEY</h2>
+                <p>The Service and Support make you feel the Value for your Money and Time.</p>
+            </div>
+        </div>
+    </div>
+    <!-- pagination pending ||pending *** (need to learn ) -->
+
+    <!-- testimonial pending **  -->
+
+    <!-- footer -->
+    <div class="bg-[#202020]">
+        <!-- outer div-->
+        <div class=" px-[20px] py-[60px] max-w-[1320px] flex flex-wrap justify-around mx-auto">
+            <!-- first footer column -->
+            <div class="footer_items px-[30px]">
+                <img class="mb-[60px]" src="Images/nav_main/logo.webp" alt="">
+                <p class="mb-[10px] description">In Tihalt, everyone has a voice and the ability to propose projects
+                    directly to
+                    the network. Anything you can
+                    do.
+                </p>
+                <div class="flex flex-row space-x-2">
+                    <i class="fa fa-facebook p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+                        aria-hidden="true"></i>
+                    <i class="fa fa-twitter p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+                        aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+                        aria-hidden="true"></i>
+                    <i class="fa fa-linkedin p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+                        aria-hidden="true"></i>
+                    <i class="fa fa-instagram p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+                        aria-hidden="true"></i>
+                    <i class="fa fa-pinterest-p p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+                        aria-hidden="true"></i>
+                </div>
+                <div>
+                    <h4 class="footer_head">INTERACTIVE WEB SOLUTIONS</h4>
+                    <ul class="list-none ">
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a
+                                class="footer_list" href="#">Drupal Development</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a
+                                class="footer_list" href="#">CMS Website Development</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a
+                                class="footer_list" href="#">Ecommerce Website Development</a> </li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a
+                                class="footer_list" href="#">Joomla Development</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a
+                                class="footer_list" href="#">Responsive Web Design</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a
+                                class="footer_list" href="#">Website Maintenance Services</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a
+                                class="footer_list" href="#">WordPress Development</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- second footer column  -->
+            <div class="footer_items px-[30px]">
+                <!-- heading and description  -->
+                <div class="mb-[60px]">
+                    <h4 class="footer_head">USEFUL LINKS</h4>
+                    <ul>
+                        <li class="description"><a href="#">Mobile Application Development</a></li>
+                        <li class="description"><a href="#">Best Digital Marketing Copany in Bangalore</a></li>
+                        <li class="description"><a href="#">Website Development Service</a></li>
+                        <li class="description"><a href="#">Creative Communications</a></li>
+                        <li class="description"><a href="#">Graphic design company in bangalore</a></li>
+                        <li class="description"><a href="#">SEO Servie in bangalore</a></li>
+                        <li class="description"><a href="#">Terms and conditions</a></li>
+                        <li class="description"><a href="#">Refund and cancellation policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer_head">DIGITAL MARKETING</h6>
+                        <ul>
+                            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a
+                                    href="#">Link Building
+                                    Services</a></li>
+                            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">SEO
+                                    Copywriting</a></li>
+                            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">PPC
+                                    Company
+                                    Bangalore</a></li>
+                            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a
+                                    href="#">Search Engine
+                                    Marketing</a></li>
+                            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a
+                                    href="#">Social Media
+                                    Marketing</a></li>
+                            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a
+                                    href="#">Content
+                                    Writing</a></li>
+                        </ul>
+                </div>
+            </div>
+            <!-- third footer column  -->
+            <div class="footer_items px-[30px]">
+                <h4 class="footer_head">GET TOUCH WITH US</h4>
+                <div class="description">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    No. 32, 38/1, 2nd Floor, Sri Ram Arcade, Near Bosch Office, Hosur
+                    Main Road, Bommanahalli, Bengaluru, Karnataka 560068.
+                </div>
+                <!-- mobile and email  -->
+                <div class="mb-[10px] flex flex-col description">
+                    <i class="fa fa-envelope-o" aria-hidden="true">info@tihalt.com.</i> <br>
+                    <i class="fa fa-phone" aria-hidden="true">+91 96 1122 3984</i>
+                </div>
+                <div>
+                    <h4 class="footer_head">SOFTWARE DEVELOPMENT</h4>
+                    <ul>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Mobile
+                                Application
+                                Development</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a
+                                href="#">Application
+                                development</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a
+                                href="#">Interactive
+                                Application Development</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Custom
+                                Software
+                                Development/ Maintenance</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a
+                                href="#">Enterprise solution
+                                development</a></li>
+                        <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">ERP
+                                solutions &
+                                support</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer copyright portion  -->
+    <div class="bg-[#202020]">
+        <div class="max-w-[1320px] mx-auto text-[#838383] py-[38px] px-[20px] flex justify-center items-center">
+            Copyright ©
+            2016-2023 Tihalt Technosoft Private Limited.</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function onToggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show-menu');
+        }
+
+
+
+        window.addEventListener('load', function () {
+
+            let counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                let updateCount = () => {
+                    let target = +counter.getAttribute('data-target'); // Get target number
+                    let count = +counter.innerText; // Get current count
+                    let speed = 200; // Animation speed (lower is faster)
+
+                    // Increment count towards target
+                    let inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                }
+                updateCount(); // Start the counting
+            });
+        });
+
+
+    </script>
+
+</body>

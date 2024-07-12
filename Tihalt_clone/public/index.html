@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tihalt Technologies - Get Intouch with Web Development Company</title>
+  
+
+  <!-- font-awesome icon link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- tailwind css link -->
+  <link rel="stylesheet" href="src/output.css">
+  <!-- for menu bar of mobile screen -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <style>
+    /* for time-line  */
+    .step-content {
+      display: none;
+    }
+
+    .step-content.active {
+      display: block;
+    }
+    .step-num.active {
+      background-color: white;
+      color: #223077;
+    }
+
+    .step-text.active {
+      color: white;
+    }
+
+    /* nav bar mobile screen  */
+    .nav-links {
+      display: none;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
+    }
+
+    .show-menu {
+      display: flex !important;
+      top: 198px;
+    }
+   
+  </style>
+</head>
+
+<body>
+  <!-- || fixed icons ||  -->
+  <!-- right side chat button fixed   -->
+  <div class="fixed">
+    <button class="z-20 text-white fixed bottom-0 right-5 rounded-lg mr-1 mb-5 ">
+      <div class="p-3 rounded-full bg-[#EEAE20]">
+        <i class="fa fa-comments flex justify-between items-center" aria-hidden="true"></i>
+
+      </div>
+
+    </button>
+  </div>
+  <!-- left side whatsapp chat button fixed  -->
+  <div class="fixed">
+    <button class="z-20 text-white fixed bottom-0 left-5 rounded-lg ml-1 mb-5 ">
+      <div class="p-3 rounded-full bg-[#46C254]">
+        <i class="fa fa-whatsapp flex justify-between items-center" aria-hidden="true"></i>
+      </div>
+
+    </button>
+  </div>
+  <!-- for backgound image of home-page  -->
+  <div class="home bg-cover" style="background-image: url(homepage_bg.jpg);">
+     <!-- outer div for nav and social handle  -->
+     <div class="fixed w-full top-0 z-50">
+      <!-- Social handle top most -->
+    <!-- Upper bar  -->
+    <div class="contact_bar flex flex-row justify-between items-center px-[15px] text-white md:bg-[#232D4F] md:bg-opacity-[0.90] bg-[#222222] max-sm:flex-col max-sm:py-4">
+      <!-- mobile number call icon in upper nav bar  -->
+      <div class="mobile_number">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <a href="tel:+91 9611223984" class="hover:border-b-[2px] border-white "> +91 96 1122 3984</a>
+      </div>
+      <!-- email icon and email address && social address  -->
+      <div class="email_social-contact flex flex-row items-center max-sm:flex-col">
+        <div class="email ml-[28px] py-[10px] px-[19px]">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+          <a href="mailto:info@tihalt.com " class="hover:border-b-[2px] border-white"> info@tihalt.com</a>
+        </div>
+        <!-- social links  -->
+        <div class="social-contact ml-[10px] space-x-2 ">
+          <a href="https://www.facebook.com/tihalt/" target="_blank" title="facebook">
+            <i class="fa fa-facebook hover:text-yellow-400"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/tihalt-technologies/" target="_blank" title="linkedin">
+            <i class="fa fa-linkedin hover:text-yellow-400"></i>
+          </a>
+          <a href="https://twitter.com/TihaltTechno" target="_blank" title="twitter">
+            <i class="fa fa-twitter hover:text-yellow-400"></i>
+          </a>
+          <a href="https://www.instagram.com/tihalttechnologies/" target="_blank" title="instagram">
+            <i class="fa fa-instagram hover:text-yellow-400"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- nav bar -->
+    <header class="bg-black bg-opacity-[.85] ">
+    <nav class="flex justify-between items-center py-[20px]  text-[15px] max-w-[1320px] mx-auto ">
+      <div>
+        <img class="w-28 cursor-pointer"
+          src="https://i0.wp.com/tihalt.com/wp-content/uploads/2019/04/logo.png?fit=106%2C25&ssl=1" alt="...">
+      </div>
+      <div
+        class="nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full bg-gray-800  backdrop:blur-sm md:bg-transparent flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+          <li>
+          <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="AboutUs.html">About
+              Us</a>
+          </li>
+          <li>
+            <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Our Services</a>
+          </li>
+          <li>
+            <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Products</a>
+          </li>
+          <li>
+            <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Portfolio</a>
+          </li>
+          <li>
+            <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="pb-2 font-normal hover:border-b-[1px] border-white text-white" href="ContactUs.html">Contact
+              Us</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-6 ">
+        <button class="cursor-pointer bg-[#EEAE20] rounded-[4px] max-md:hidden px-[12px] py-[6px] ">REQUEST
+          QUOTE</button>
+        <ion-icon onclick="onToggleMenu(this)" name="menu"
+          class="text-3xl text-slate-50 border-[#222222] border-[2px] pr-[12px] cursor-pointer md:hidden"></ion-icon>
+      </div>
+    </nav>
+
+  </header>
+    </div>
+    <!-- home page  -->
+    <div class="home pt-[100px] px-8 pb-9">
+      <div class="tihalt">
+        <h1 class="text-[104px] font-bold text-white">
+          Tihalt
+        </h1>
+      </div>
+      <div class="demo_text text-white">
+        Tihalt Technologies is one of Bangalore’s most experienced and <br>
+        trusted website design and digital marketing company.
+      </div>
+      <!-- Learn more and download button  -->
+      <div class=" pt-10">
+        <button
+          class="cursor-pointer text-white border-yellow-200 border-[2px] bg-transparent px-6 py-4 rounded-[34px]">
+          Learn More
+        </button>
+        <button class="cursor-pointer bg-white text-black px-4 py-4 rounded-[34px]">
+          Download Brochure
+        </button>
+      </div>
+    </div>
+    <!-- home first portion  -->
+    <!-- need to check error ** may flex problem -->
+    <div class="middle_text pt-65px flex flex-col md:mx-[45px] px-[20px] pb-[40px]">
+      <div class="up mb-[20px] text-[52px] leading-[54px] font-bold text-white">Welcome to Tihalt – Web Design Company
+        <br> in Bangalore
+      </div>
+      <div class="down flex flex-row justify-baseline max-sm:flex-col">
+        <div class="one pt-[12px] pr-[50px] text-[41px] mb-[20px] font-bold text-white">DECENTRALIZED <br>
+          PLATFORM THAT RUNS <br> SMART CONTRACTS!
+        </div>
+
+        <span class="three pt-[69px] pl-[50px] mb-[20px] text-[20px] text-white md:w-1/2">Tihalt is the best web design
+          company in Bangalore besides the top digital marketing and SEO Agency in Bangalore. We provide web
+          development & design services, SEO & digital marketing consultancy services to bring your products and
+          services to a wider public. Join with our branding and user-centered design, Clients are engaged & brand value
+          grows.
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- four box second portion of home page -->
+  <div class="bg-white px-4">
+    <div class="mx-auto">
+      <!-- outer main div  -->
+      <div class="flex flex-col md:flex-row">
+        <!-- first box  -->
+        <div class="first-main-box px-4 md:w-1/4 mb-8 mt-[-40px] py-4 space-y-4">
+          <div class="h-64 bg-gray-300">
+            <img src="Images/nested/ecommerce.webp" alt="Website Design" class="w-full h-full object-cover">
+          </div>
+          <h2 class="text-2xl font-bold mt-4">
+            Website Design & Development
+          </h2>
+          <p class="mt-2">We are specialized in professional web design, website redesign, static and dynamic website
+            design and customized web portals for all kind of organizations like non-profit, SME’s and corporate
+            business that who are all looking for perfect professional services.
+          </p>
+          <button class="bg-white border-[2px] border-yellow-500 text-black font-bold py-2 px-4 rounded-full mt-4">
+            Read More
+          </button>
+        </div>
+        <!-- second box  -->
+        <div class="second-main-box px-4 md:w-1/4 mb-8 mt-[-40px] py-4 space-y-4">
+          <div class="h-64 bg-gray-300">
+            <img src="Images/nested/mobile-and-mobility.webp" alt="Mobile App Development"
+              class="w-full h-full object-cover">
+          </div>
+          <h2 class="text-2xl font-bold mt-4">
+            Mobile Application Development
+          </h2>
+          <p class="mt-2">Are you looking for a customized mobile app for your business growth? We create your Mobile
+            app in such a way visible to your customer, you can enlarge your business and gain more loyalty from them.
+            Our team turns your extreme imagination into ex-ordinary reality.
+          </p>
+          <button class="bg-white border-[2px] border-yellow-500 text-black font-bold py-2 px-4 rounded-full mt-4">
+            Read More
+          </button>
+        </div>
+        <!-- third box  -->
+        <div class="third-main-box px-4 md:w-1/4 mb-8 mt-[-40px] py-4 space-y-4">
+          <div class="h-64 bg-gray-300">
+            <img src="Images/nested/DIGITAL-MARKETING.webp" alt="SEO Services"
+              class="w-full h-full rounded-xl object-cover">
+          </div>
+          <h2 class="text-2xl font-bold mt-4 uppercase">
+            SEO-Digital Marketing Services
+          </h2>
+          <p class="mt-2">Tihalt will provide you with the best SEO tactics that make you the better one in your
+            business. Tihalt can make good credibility among your clients and capable of bringing a good user
+            experience to your website. We will promote your brand by the way of ads, social media promotions.
+          </p>
+          <button class="bg-white border-[2px] border-yellow-500 text-black font-bold py-2 px-4 rounded-full mt-4">
+            Read More
+          </button>
+        </div>
+        <!-- fourth box  -->
+        <div class="fourth-main-box px-4 md:w-1/4 mb-8 mt-[-40px] py-4 space-y-4">
+          <div class="h-64 bg-gray-300">
+            <img src="Images/nested/ecommerce (1).webp" alt="Ecommerce Development" class="w-full h-full object-cover">
+          </div>
+          <h2 class="text-2xl font-bold mt-4">
+            E-Commerce Site Development
+          </h2>
+          <p class="mt-2">Our team builds interactive, user-friendly, High-performance and profit gaining e-commerce
+            portals. Tihalt Technologies has created niche e-commerce websites in the market. Our specialists provide
+            end to end e-commerce platform that helps you to success the business.
+          </p>
+          <button class="bg-white border-[2px] border-yellow-500 text-black font-bold py-2 px-4 rounded-full mt-4">
+            Read More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- || third portion of home page, 8 box with icon flex wrap || -->
+  <div class="third-bg bg-cover " style="background-image: url(half-service-bg.jpg); ">
+    <div class=" px-[20px] max-w-[1320px] flex flex-wrap justify-evenly mx-auto">
+      <!-- <div class="upper px-[20px] pb-[60px] size-[14px]">KEY FEATURES</div> pending ** -->
+
+      <!-- item 1 -->
+      <div class="card_items1 ">
+        <img class="card1_img" src="Images/cost_images/COST-QUALITY.webp" alt="">
+        <div class="text">
+          <h3 class="card1_heading">COST & QUALITY</h3>
+          <p class="card1_p">A good web development company knows the cost of
+            services and quality of work at the
+            end. Each project must be accomplished with the time frame and with good quality. Make sure you are
+            hiring
+            the
+            best web designer.</p>
+        </div>
+
+      </div>
+
+      <!-- item 2  -->
+      <div class="card_items1">
+        <img class="card1_img" src="Images/cost_images/SIMPLE-AND-PROFESSIONAL-WEB-DESIGN.webp" alt="">
+        <div class="text">
+          <h3 class="card1_heading">SIMPLE AND PROFESSIONAL WEB DESIGN</h3>
+          <p class="card1_p">Websites are the best medium that converts the visitor
+            into buying the customer. So it
+            should carry an attractive layout, clean and simple. Make it in a good way and choose the best service
+            provider.
+          </p>
+        </div>
+      </div>
+
+      <!-- item 3  -->
+      <div class="card_items1">
+        <img class="card1_img" src="Images/cost_images/SEARCH-ENGINE-OPTIMIZATION.webp" alt="">
+        <div class="text">
+          <h3 class="card1_heading">SEARCH ENGINE OPTIMIZATION</h3>
+          <p class="card1_p">When we are creating new websites the company should
+            have the idea of SEO, then only
+            they will create SEO optimized website for you. SEO gives various improvements to your business. Enable
+            all
+            SEO compatible components.</p>
+        </div>
+
+      </div>
+      <!-- item 4  -->
+      <div class="card_items1">
+        <img class="card1_img" src="Images/cost_images/PORTFOLIO.webp" alt="">
+        <div class="text">
+          <h3 class="card1_heading">PORTFOLIO</h3>
+          <p class="card1_p">Look at our portfolio. It is the most important things to
+            attract clients to hire the best
+            web design company in Bangalore. Its show the credibility of the company and the skills, capability.
+            It’s an
+            effective tool to communicate with the customer.</p>
+        </div>
+      </div>
+      <!-- item 5  -->
+      <div class="card_items1">
+        <img class="card1_img" src="Images/cost_images/VARIETY-OF-SERVICES.webp" alt="">
+        <div class="text">
+          <h3 class="card1_heading">VARIETY OF SERVICES</h3>
+          <p class="card1_p">A company which is having various services that they having more exposure to web design and
+            its related techniques. Before hiring check with them that they have SEO, SEM, SMM along web development.
+          </p>
+        </div>
+      </div>
+      <!-- item 6  -->
+      <div class="card_items1">
+        <img class="card1_img" src="Images/cost_images/WEB-PAGE-SPEED.webp" alt="">
+        <div class="text">
+          <h3 class="card1_heading">WEB PAGE SPEED</h3>
+          <p class="card1_p">Most peoples inherently lose patients very soon. If our
+            website taking too much time it
+            makes them get out of our site. So a techie should take care of minimizing all controllable factors
+            slowing
+            down your site speed. Check now your website speed in PageSpeed Insights.
+          </p>
+        </div>
+      </div>
+      <!-- item 7  -->
+      <div class="card_items1">
+        <img class="card1_img" src="Images/cost_images/RESPONSIVE-DESIGN (1).webp" alt="">
+        <div class="text">
+          <h3 class="card1_heading">RESPONSIVE DESIGN</h3>
+          <p class="card1_p"> Create a website is easy, but the challenge is to render
+            the website ought to be easily
+            fixed in different platforms like mobiles and laptops. When the size of the device increase it will not
+            affect
+            the functionality and view of the product.</p>
+        </div>
+      </div>
+      <!-- item 8  -->
+      <div class="card_items1">
+        <img class="card1_img" src="Images/cost_images/RELATIONSHIP-WITH-CLIENTS.webp" alt="">
+        <div class="text">
+          <h3 class="card1_heading">RELATIONSHIP WITH CLIENTS</h3>
+          <p class="card1_p">The web design company must have a good relationship with
+            their clients. Support them and
+            handle every issue related to the applications or websites. Analyze them if they can able to give 24×7
+            support.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- || about ||  Need to work flex wrap may be used *(*)-->
+  <div class="about bg-cover" style="background-image: url(half-about-bg.jpg);">
+    <!-- first div left alligned with w 1/2 -->
+    <div class="flex flex-col  mx-[10%] ">
+      <div class="right_1  px-[20px] py-[30px] text-[41px] text-white md:w-1/2">ARE YOU LOOKING FOR A BEST WEB DESIGN
+        COMPANY IN
+        BANGALORE?</div>
+      <div class=" right_2 md:w-1/2 px-[20px] py-[20px] text-[#BABDFF]">Tihalt is one of the best web design company in
+        Bangalore. We are taken web design solutions as
+        an art of our professional web design team and we have a belief which is everything in first impressions so
+        crafted similar websites. We not only develop attractive websites but also we develop them in some of the ways
+        that engage and encourages them to reach out you or your businesses so You develop professional, powerful,
+        attractive and user-friendly websites for all businesses and NGO through web design company in Bangalore. At
+        Tihalt, we build all types of websites, web portals, landing pages, static websites, dynamic websites, eCommerce
+        websites and other website related services.</div>
+    </div>
+    <!-- font some icon with features  -->
+    <div class=" right3 flex flex-col mx-[10%] px-[20px] pb[20px] leading-10 text-white">
+
+      <div>
+        <i class="fa fa-arrow-right text-[#FFC31A] pr-2" aria-hidden="true"></i>
+        Website Designing and Development
+      </div>
+      <div>
+        <i class="fa fa-arrow-right text-[#FFC31A] pr-2" aria-hidden="true"></i>
+        Custom Designed Websites
+      </div>
+      <div>
+        <i class="fa fa-arrow-right text-[#FFC31A] pr-2" aria-hidden="true"></i>
+        Revamping Existing Websites
+      </div>
+      <div>
+        <i class="fa fa-arrow-right text-[#FFC31A] pr-2" aria-hidden="true"></i>
+        Website Maintenance
+      </div>
+      <div>
+        <i class="fa fa-arrow-right text-[#FFC31A] pr-2" aria-hidden="true"></i>
+        Content Management System(CMS)
+      </div>
+      <div>
+        <i class="fa fa-arrow-right text-[#FFC31A] pr-2" aria-hidden="true"></i>
+        Responsive Web Design
+      </div>
+      <div>
+        <i class="fa fa-arrow-right text-[#FFC31A] pr-2" aria-hidden="true"></i>
+        Web Hosting Services
+      </div>
+      <div>
+        <i class="fa fa-arrow-right text-[#FFC31A] pr-2" aria-hidden="true"></i>
+        Take Care of Domain Name
+      </div>
+      <div>
+        <i class="fa fa-arrow-right text-[#FFC31A] pr-2" aria-hidden="true"></i>
+        eCommerce Websites Development
+      </div>
+    </div>
+    <!-- button  -->
+
+    <div class="px-[20px] pb-[30px]">
+      <button
+        class="border-2 font-semibold border-yellow-500 hover:border-yellow-100 py-3 px-6 rounded-3xl text-white hover:text-yellow-300 mx-[10%]">Read
+        More</button>
+    </div>
+    <!-- second main div right alligned with w 1/2  -->
+    <div class="flex flex-col right justify-center md:items-end mx-[10%]">
+      <!-- first right alligned div  -->
+      <div class="md:w-1/2 px-[20px] py-[30px] text-[41px] text-white">WE DRIVE YOUR BUSINESS THROUGH OUR RESULT
+        ORIENTED SEO & BEST DIGITAL MARKETING SERVICES</div>
+      <!-- second right alligned div -->
+      <div class="md:w-1/2 px-[20px] py-[20px] text-[#BABDFF]">Tihalt is providing the full range of digital marketing
+        services in Bangalore. Nowadays the whole world is
+        connected very well through the internet without the internet it does not possible besides internet users is
+        being grown trend and smartphone users also. So our best way of digital marketing services gives you sufficient
+        routes to boost your brand and products. When the business needs to reach all over the world it should be doing
+        digital marketing, without SEO and digital marketing we can’t able to boost the business in Bangalore, India,
+        and global. We are one of the best SEO company in Bangalore which one providing all kinds of solutions for your
+        businesses with the following benefits that are increase leads, generate the best sales and retail customers.
+      </div>
+      <!-- third right alligned div  -->
+      <div>
+        <button
+          class="border-2 font-semibold border-yellow-500 hover:border-yellow-100 py-3 px-6 rounded-3xl text-white hover:text-yellow-300 ">Read
+          More</button>
+      </div>
+    </div>
+  </div>
+  <!-- description -->
+  <!-- heading  -->
+  <div class="backgound_">
+    <div class="max-w-[1320px] mx-auto flex flex-col justify-center items-center px-[20px] pb-[30px]">
+      <h1 class="text-[52px] font-bold mb-[20px] tracking-wide text-center">Tihalt Offers Affordable SEO Services in
+        Bangalore</h1>
+      <p class="text-[16px] mb-[20px]">Our SEO services offer a visible and effective search presence leading to a
+        considerable increase in sales,
+        profitability, and cost efficiency for our clients.</p>
+    </div>
+    <!-- || outer div || -->
+    <div class="mx-auto px-[20px] max-w-[1320px] flex flex-wrap justify-around">
+
+      <!--  sub div 1 (card)  -->
+      <div class=" card_items ">
+        <i class="fa fa-edit gdlr-core-skin-e-background gdlr-core-skin-e-content p-[17px] items-center rounded-[50%] mb-[20px]"
+          style="color: #ffffff; background-color: #1c4389;"></i>
+        <h3>CONTENT MARKETING</h3>
+        <p class="mb-[20px]">Content marketing is a strategy to create valuable and relevant content to attract
+          customers to drive profitable customer action.</p>
+      </div>
+      <!--  sub div 2  -->
+      <div class="card_items ">
+        <i class="fa fa-mobile gdlr-core-skin-e-background gdlr-core-skin-e-content p-[17px] items-center rounded-[50%] mb-[20px]"
+          style="color: #ffffff ;background-color: #1c4389 ;">
+        </i>
+        <h3>MOBILE MARKETING</h3>
+        <p class="mb-[20px]">Mobile marketing is one kind of digital marketing to reach the audience to their mobile
+          via websites,
+          emails, SMS, social media and apps.</p>
+      </div>
+      <!--  sub div 3 -->
+      <div class="card_items ">
+        <i class="fa fa-area-chart gdlr-core-skin-e-background gdlr-core-skin-e-content p-[17px] items-center rounded-[50%] mb-[20px]"
+          style="color: #ffffff ;background-color: #1c4389 ;"></i>
+        <h3>ADVANCED ANALYTICS</h3>
+        <p class="mb-[20px]">Advanced analytics is one of the data science methods that focus on projects future
+          trends, events and
+          behaviors. It gives a clear view of various aspects of the operations</p>
+      </div>
+      <!--  sub div 4  -->
+      <div class="card_items ">
+        <i class="fa fa-podcast gdlr-core-skin-e-background gdlr-core-skin-e-content p-[17px] items-center rounded-[50%] mb-[20px]"
+          style="color: #ffffff ;background-color: #1c4389 ;">
+        </i>
+        <h3>PPC MANAGEMENT</h3>
+        <p class="mb-[20px]">In PPC the Digital marketer analyses the strategy and budget. And they monitor each
+          campaign and all
+          keyword’s effectiveness. Just ensure PPC efforts are yielding a positive ROI.</p>
+      </div>
+      <!--  sub div 5  -->
+      <div class="card_items ">
+        <i class="fa fa-audio-description gdlr-core-skin-e-background gdlr-core-skin-e-content p-[17px] items-center rounded-[50%] mb-[20px]"
+          style="color: #ffffff ;background-color: #1c4389 ;">
+        </i>
+        <h3>ADS ON TARGET</h3>
+        <p class="mb-[20px]">It’s one technique of online advertising model that is directed the audience based on
+          the product or
+          person the advertiser promoting.</p>
+      </div>
+      <!--  sub div 6  -->
+      <div class="card_items ">
+        <i class="fa fa-line-chart gdlr-core-skin-e-background gdlr-core-skin-e-content p-[17px] items-center rounded-[50%] mb-[20px]"
+          style="color: #ffffff ;background-color: #1c4389 ;">
+        </i>
+        <h3>VIRTUAL MARKETING</h3>
+        <div class="mb-[20px]"></div>
+        <p class="mb-[20px]">Virtual marketing is a contrast to traditional marketing methods such as printing and
+          broadcast. It’s fully an online advertisement that fully focuses on clicks, impression, hits and its easily
+          convert the viewer as a customer.</p>
+      </div>
+      <!--  sub div 7 -->
+      <div class="card_items ">
+        <i class="fa fa-line-chart gdlr-core-skin-e-background gdlr-core-skin-e-content p-[17px] items-center rounded-[50%] mb-[20px]"
+          style="color: #ffffff ;background-color: #1c4389 ;">
+        </i>
+        <h3>SOCIAL MEDIA SERVICES</h3>
+        <p class="mb-[20px]">Our social media strategies will help to grow your business and always maintain your
+          social presence and
+          engage the audience in a good manner.</p>
+      </div>
+
+      <!--  sub div 8  -->
+      <div class="card_items ">
+        <i class="fa fa-line-chart gdlr-core-skin-e-background gdlr-core-skin-e-content p-[17px] items-center rounded-[50%] mb-[20px]"
+          style="color: #ffffff ;background-color: #1c4389 ;">
+        </i>
+        <h3>WEB ANALYTICS</h3>
+        <p class="mb-[20px]">Web analytics is the collection, measurement, analysis, and reporting of web and
+          purpose of understanding
+          and optimizing web usage by the user.</p>
+      </div>
+    </div>
+  </div>
+  <!-- time-line  -->
+  <div class="bg-cover" style="background-image: url(Images/Background/HomePage_timeline-bg.jpg);">
+    <!-- outer div  -->
+    <div class="bg-[#0a0a0a] bg-opacity-[.35] max-md:mx-[10%] md:px-[60px]">
+      <div class="flex max-w-[1320px] mx-auto  py-[60px]">
+        <!-- Steps -->
+        <div class="w-2/4">
+          <div class=" flex flex-col justify-end  items-end">
+            <!-- steps 1 -->
+            <div class="flex items-start space-x-2 pb-[15px]">
+              <h2
+                class="step-text justify-items-end text-right cursor-pointer mr-[55px] text-[16px] font-bold text-[#A6AAFB]"
+                data-step="1">INFORMATION GATHERING</h2>
+              <div class="flex flex-col justify-center items-center space-y-2">
+                <div
+                  class="step-num w-10 h-10 bg-[#223077] text-white rounded-full flex items-center justify-center cursor-pointer"
+                  data-step="1">1</div>
+                <div class="h-[16px] w-[1px] bg-white"></div>
+              </div>
+
+            </div>
+            <!-- step 2  -->
+            <div class="flex space-x-2 pb-[15px]">
+              <div class="step-text text-right cursor-pointer mr-[55px] pt-[8px] text-[16px] font-bold text-[#A6AAFB]"
+                data-step="2">PLANNING</div>
+              <div class="flex flex-col justify-center items-center space-y-2">
+                <div
+                  class="step-num w-10 h-10 bg-[#223077] text-white rounded-full flex items-center justify-center cursor-pointer"
+                  data-step="2">2</div>
+                <div class="h-[16px] w-[1px] bg-white"></div>
+              </div>
+
+            </div>
+            <!-- step 3  -->
+            <div class="flex space-x-2 pb-[15px]">
+              <div class="step-text cursor-pointer mr-[55px] pt-[8px] text-[16px] font-bold text-[#A6AAFB]"
+                data-step="3">
+                DESIGN</div>
+              <div class="flex flex-col justify-center items-center space-y-2">
+                <div
+                  class="step-num w-10 h-10 bg-[#223077] text-white rounded-full flex items-center justify-center cursor-pointer"
+                  data-step="3">3</div>
+                <div class="h-[16px] w-[1px] bg-white"></div>
+
+              </div>
+            </div>
+            <!-- step 4 -->
+            <div class="flex  space-x-2 pb-[15px]">
+              <div class="step-text cursor-pointer mr-[55px] pt-[8px] text-[16px] font-bold text-[#A6AAFB]"
+                data-step="4">
+                DEVELOPMENT</div>
+              <div class="flex flex-col justify-center items-center space-y-2">
+                <div
+                  class="step-num w-10 h-10 bg-[#223077] text-white rounded-full flex items-center justify-center cursor-pointer"
+                  data-step="4">4</div>
+                <div class="h-[16px] w-[1px] bg-white"></div>
+              </div>
+
+            </div>
+            <!-- step 5  -->
+            <div class="flex space-x-2 pb-[15px]">
+              <div class="step-text cursor-pointer mr-[55px] pt-[8px] text-[16px] font-bold text-[#A6AAFB]"
+                data-step="5">
+                TESTING</div>
+              <div class="flex flex-col justify-center items-center space-y-2">
+                <div
+                  class="step-num w-10 h-10 bg-[#223077] text-white rounded-full flex items-center justify-center cursor-pointer"
+                  data-step="5">5</div>
+                <div class="h-[16px] w-[1px] bg-white"></div>
+              </div>
+
+            </div>
+            <!-- step 6 -->
+            <div class="flex space-x-2 pb-[15px]">
+              <div class="step-text cursor-pointer mr-[55px] pt-[8px] text-[16px] font-bold text-[#A6AAFB]"
+                data-step="6">
+                MAINTENANCE</div>
+              <div class="flex flex-col justify-center items-center space-y-2">
+                <div
+                  class="step-num w-10 h-10 bg-[#223077] text-white rounded-full flex items-center justify-center cursor-pointer"
+                  data-step="6">6</div>
+                <div class="h-[16px] w-[1px] bg-white"></div>
+              </div>
+
+            </div>
+            <!-- step 7 -->
+            <div class="flex space-x-2 pb-[15px]">
+              <div class="step-text cursor-pointer mr-[55px] pt-[8px] text-[16px] font-bold text-[#A6AAFB] "
+                data-step="7">PROMOTION</div>
+              <div class="flex flex-col justify-center items-center space-y-2">
+                <div
+                  class="step-num w-10 h-10 bg-[#223077] text-white rounded-full flex items-center justify-center cursor-pointer"
+                  data-step="7">7</div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="w-2/4  ml-[70px]">
+          <!-- content 1  -->
+          <div class="step-content" id="step-1">
+            <h3 class="text-[20px] font-bold mb-[35px] text-white">INFORMATION GATHERING</h3>
+            <p class="text-[#BABDFF] text-[17px]">Requirements gathering is more than just asking a few
+              questions and then proceeding to the next
+              step. We have some steps to process for gathering requirements that all projects should utilize
+              to some degree. If we are doing a small or big project it takes some time to work through the
+              process.
+            </p>
+            <p class="mb-[35px] text-[#BABDFF] text-[17px]"> Initially analyses and ask the right question and
+              then listen carefully to the answer. There are
+              a lot of techniques used to collect the particular requirement. It contains the following steps
+              interviews, facilitated sessions, prototypes, questionnaires and more.
+            </p>
+            <p class="text-[#BABDFF] text-[17px]">
+              After that, we just validate the collected requirements and confirm that it will reflect the
+              client’s ideology. It includes consolidate requirements and molding the gaps and creating models
+              that help to visualize the process. Then the documents and reports are created for tracking the
+              life cycle of the development. After gathering all the required details give all this to the
+              particular client for their approval.
+            </p>
+
+          </div>
+          <!-- content 2  -->
+          <div class="step-content " id="step-2">
+            <h3 class="text-[20px] font-bold mb-[35px] text-white">PLANNING</h3>
+            <p class="text-[#BABDFF] text-[17px]">
+              The project planning comprises a lot of information such as end date, milestones, activities,
+              and deliverables of the project. And it contains some additional things also that are
+              responsibilities of the project management team and the resource required for the particular
+              projects. It’s also having some more like what are all the software’s and hardware includes to
+              develop this project and list of methods and standards to be used. Those methods and standards
+              having algorithms, tools, design language, programming language, testing techniques and many.
+            </p>
+            <p class="mb-[35px] text-[#BABDFF] text-[17px]">The project plan gives the proper idea to the
+              project manager to understand, monitor and control
+              the development of the project. It keeps the understanding between the user and the project
+              management team. These are all having a lot of advantages and some of the given below.</p>
+            <ul class="list-disc text-[#BABDFF] text-[17px] pl-[25px]">
+              <li> Project planning ensures that the software or websites are developed according to the
+                user's
+                ideas, requirements, and scope of the project.</li>
+              <li>t gives the proper role of each project development team members involves to develop this
+                project.</li>
+              <li>It’s given a good idea to monitor the progress of the project according to the plan of the
+                project.</li>
+              <li>Project planning is confirming the resources and their availability and the activities to be
+                performed during the development of the project.</li>
+              <li>Gives the overview to manage the cost of the software project, just plan this during the
+                time of project planning.</li>
+            </ul>
+          </div>
+          <!-- content 3  -->
+          <div class="step-content" id="step-3">
+            <h3 class="text-[20px] font-bold mb-[35px] text-white">DESIGN</h3>
+            <p class="mb-[35px] text-[#BABDFF] text-[17px]">The website design process is transforming user
+              requirements into a suitable form. This one helps
+              the programmer in coding and further implementation.</p>
+            <p class="mb-[35px] text-[#BABDFF] text-[17px]">
+              The web designing process has the user requirements documents that help to do the coding and
+              implementation. The requirement documents comprise more details about the projects and its
+              working flow. The output of this process can directly create the implementation in programing
+              languages.
+            </p>
+            <p class="mb-[35px] text-[#BABDFF] text-[17px]">The design yields three levels of results:</p>
+            <p class="mb-[35px] text-[#383838] text-[17px]">Architectural Design</p>
+            <p class="mb-[35px] text-[#BABDFF] text-[17px]">t is the initial level of design that contains the
+              components which are all integrated. In this
+              particular design helps the designers to get the idea of the project.</p>
+          </div>
+          <!-- content 4 -->
+          <div class="step-content" id="step-4">
+            <h3 class="text-[20px] font-bold mb-[35px] text-white">DEVELOPMENT</h3>
+            <p class="text-[#BABDFF] text-[17px]">After getting the system design documents, the work is divided
+              into small modules and units and
+              the actual development of coding is started. This is a major part of the project. Initially, the
+              development process started according to the requirements and design discussed in the previous
+              parts.
+              The database created by the backend developer and the front end created by the UI developer. UI
+              part is most important in the websites. After done the back end and front-end work both are
+              integrated.
+              Developers involved all kinds of development and complete it at the period. Create all kind of
+              acceptable functionality what they finalized in the designed documents.</p>
+          </div>
+          <!-- content 5 -->
+          <div class="step-content" id="step-5">
+            <h3 class="text-[20px] font-bold mb-[35px] text-white">TESTING</h3>
+            <p class="text-[#BABDFF] text-[17px]">Testing the process is an important part of launching the
+              product to the customer. There we will
+              use some kind of method.</p>
+          </div>
+          <!-- content 6 -->
+          <div class="step-content" id="step-6">
+            <h3 class="text-[20px] font-bold mb-[35px] text-white">MAINTENANCE</h3>
+            <p class="text-[#BABDFF]">Once the full web application or software has been fully tested and the no
+              more high priority
+              issues remain at anymore. This is the time to deploy the product to the customer.
+              After delivering the products the future developments and post-production issues handled by the
+              development team. Usually, a maintenance team took this after the post-production.
+              If some issues encountered in the production the development team information to a particular
+              problem and how much priority it has. Based on the priority of the problem to be fixed, some
+              have to fix immediately. some will keep holding till the next version.</p>
+          </div>
+          <!-- content 7 -->
+          <div class="step-content" id="step-7">
+            <h3 class="text-[20px] font-bold mb-[35px] text-white">PROMOTION</h3>
+            <p class="text-[#BABDFF] text-[17px]">Many promotion techniques exist in the current market to
+              promote our business. These may help us
+              to reach among some of the peoples who all surround us. That not much helpful to enlarge your
+              business all over the world. We some of the commonly known promotion techniques such as mouth
+              marketing, Websites, Social media, Flyers, Newspaper Ads and many.
+              In this some of that giving a large scope to give much business. We can able to the website for
+              our business and choose some digital marketing agency to do the SEO and Digital Marketing for
+              your products or businesses. It is helpful to get many customers.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- || footer || -->
+  <div class="bg-[#202020]">
+    <!-- outer div-->
+    <div class=" px-[20px] py-[60px] max-w-[1320px] flex flex-wrap justify-around mx-auto">
+      <!-- first footer column -->
+      <div class="footer_items">
+        <img class="mb-[60px]" src="Images/nav_main/logo.webp" alt="">
+        <p class="mb-[10px] description">In Tihalt, everyone has a voice and the ability to propose projects directly to
+          the network. Anything you can
+          do.
+        </p>
+        <div class="flex flex-row space-x-2">
+          <i class="fa fa-facebook p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-twitter p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-youtube-play p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-linkedin p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-instagram p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-pinterest-p p-[10px] text-black bg-white rounded-[50%] w-[10px] h-[10px] flex items-center justify-center"
+            aria-hidden="true"></i>
+        </div>
+        <div>
+          <h4 class="footer_head">INTERACTIVE WEB SOLUTIONS</h4>
+          <ul class="list-none ">
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Drupal Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">CMS Website Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Ecommerce Website Development</a> </li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Joomla Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Responsive Web Design</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">Website Maintenance Services</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i> <a class="footer_list"
+                href="#">WordPress Development</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- second footer column  -->
+      <div class="footer_items">
+        <!-- heading and description  -->
+        <div class="mb-[60px]">
+          <h4 class="footer_head">USEFUL LINKS</h4>
+          <ul>
+            <li class="description"><a href="#">Mobile Application Development</a></li>
+            <li class="description"><a href="#">Best Digital Marketing Copany in Bangalore</a></li>
+            <li class="description"><a href="#">Website Development Service</a></li>
+            <li class="description"><a href="#">Creative Communications</a></li>
+            <li class="description"><a href="#">Graphic design company in bangalore</a></li>
+            <li class="description"><a href="#">SEO Servie in bangalore</a></li>
+            <li class="description"><a href="#">Terms and conditions</a></li>
+            <li class="description"><a href="#">Refund and cancellation policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="footer_head">DIGITAL MARKETING</h6>
+            <ul>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Link Building
+                  Services</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">SEO
+                  Copywriting</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">PPC Company
+                  Bangalore</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Search Engine
+                  Marketing</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Social Media
+                  Marketing</a></li>
+              <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Content
+                  Writing</a></li>
+            </ul>
+        </div>
+      </div>
+      <!-- third footer column  -->
+      <div class="footer_items">
+        <h4 class="footer_head">GET TOUCH WITH US</h4>
+        <div class="description">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          No. 32, 38/1, 2nd Floor, Sri Ram Arcade, Near Bosch Office, Hosur
+          Main Road, Bommanahalli, Bengaluru, Karnataka 560068.
+        </div>
+        <!-- mobile and email  -->
+        <div class="mb-[10px] flex flex-col description">
+          <i class="fa fa-envelope-o" aria-hidden="true">info@tihalt.com.</i> <br>
+          <i class="fa fa-phone" aria-hidden="true">+91 96 1122 3984</i>
+        </div>
+        <div>
+          <h4 class="footer_head">SOFTWARE DEVELOPMENT</h4>
+          <ul>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Mobile Application
+                Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Application
+                development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Interactive
+                Application Development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Custom Software
+                Development/ Maintenance</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">Enterprise solution
+                development</a></li>
+            <li class="footer_list"><i class="fa fa-angle-right " aria-hidden="true"></i><a href="#">ERP solutions &
+                support</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- //function  -->
+  <script>
+    // navbar 
+    function onToggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show-menu');
+        }
+    // time-line 
+    document.querySelectorAll('.step-num, .step-text').forEach(element => {
+      element.addEventListener('click', () => {
+        const step = element.getAttribute('data-step');
+
+        // Hide all step contents
+        document.querySelectorAll('.step-content').forEach(content => {
+          content.classList.remove('active');
+        });
+
+        // Show the selected step content
+        document.getElementById(`step-${step}`).classList.add('active');
+
+        // Remove active class from all step numbers and texts
+        document.querySelectorAll('.step-num, .step-text').forEach(el => {
+          el.classList.remove('active');
+        });
+
+        // Add active class to the clicked step number and text
+        document.querySelectorAll(`[data-step="${step}"]`).forEach(el => {
+          el.classList.add('active');
+        });
+      });
+    });
+
+    // Activate the first step by default
+    document.querySelector('.step-num[data-step="1"]').click();
+
+  </script>
+</body>
+
+</html>
