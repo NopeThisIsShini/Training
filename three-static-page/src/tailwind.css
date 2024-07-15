@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+/* footer style  */
+.footer_list{
+    @apply pl-[28px] pb-[15px] mb-[15px] text-[12px]
+}
+.description{
+    @apply text-[12px]
+}
+.flag_head{
+    @apply text-[26px] text-[#383838] font-semibold
+}
+
+.footer_head{
+    @apply mb-[35px] font-bold text-[12px]
+}
+/* // footer items  */
+.footer_items{
+    @apply px-[20px] pb-[60px] basis-[33.333%] my-[10px] items-start max-lg:basis-[100%] text-white space-y-6
+}
+@tailwind utilities;
