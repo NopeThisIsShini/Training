@@ -1,0 +1,16 @@
+<header class="text-gray-400 body-font w-full items-center">
+    <div class="w-full mx-auto flex flex-wrap p-2  max-md:flex-col max-sm:justify-center justify-between items-center fixed z-50 bg-[#5a6562]  space-x-11 ">
+      <div>
+        <a class="flex title-font font-medium items-center text-white md:mb-0">
+            <img  class="w-10 h-10 border-yellow-50 p-2 rounded-full border-2 bg-black" src="../../assets/navbar/navbar_icon.png" alt="">
+            <span class="ml-3 text-xl text-yellow-50">NopeThisIsShini</span>
+          </a>
+      </div>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a routerLink="/home" routerLinkActive="active" class="mr-5 hover:text-white">Home</a>
+        <a routerLink="/about" routerLinkActive="active" class="mr-5 hover:text-white">About</a>
+        <a routerLink="/contactus" routerLinkActive="active" class="mr-5 hover:text-white">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+<router-outlet></router-outlet>  
