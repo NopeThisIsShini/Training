@@ -1,0 +1,54 @@
+<div class="bg-[#EBF3FA] h-screen flex items-center justify-center">
+    <form #signupForm="ngForm" class="w-full max-w-md bg-[#e2e8f0] p-6 rounded-lg shadow-lg">
+        <h1 class="text-3xl font-semibold mb-6 text-center">Sign Up</h1>
+        
+        <div class="mb-5">
+            <input
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                type="email"
+                placeholder="Email*"
+                required
+                pattern="^[a-z0-9]+@[a-z]+\.[a-z]{2,3}$"
+                ngModel
+                name="email"
+                #email="ngModel"
+            />
+            <p class="text-red-600 mt-1 text-sm" [hidden]="email.valid || email.untouched">Enter Correct Email</p>
+        </div>
+        
+        <div class="mb-5">
+            <input
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                type="password"
+                placeholder="Password*"
+                required
+                ngModel
+                name="password"
+                #password="ngModel"
+                (ngModelChange)="validatePassword($event)"
+            />
+            <p class="text-red-600 mt-1 text-sm" [hidden]="password.valid || password.untouched">Required</p>
+            <p class="text-red-600 mt-1 text-sm" *ngIf="passwordError && password.dirty">{{ passwordError }}</p>
+        </div>
+        
+        <div class="flex space-x-4 mb-4">
+            <button
+                class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-400"
+                (click)="signup(signupForm)"
+                [disabled]="signupForm.invalid"
+            >
+                Sign Up
+            </button>
+            <button
+                class="w-full px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500"
+                (click)="reset(signupForm)"
+            >
+                Reset
+            </button>
+        </div>
+        
+        <p class="text-sm font-light text-gray-500 text-center">
+            Already have an account? <button (click)="OnLogin()" class="font-medium text-blue-600 hover:underline">Login Here</button>
+        </p>
+    </form>
+</div>

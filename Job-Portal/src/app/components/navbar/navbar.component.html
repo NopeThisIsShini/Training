@@ -1,0 +1,62 @@
+<nav class="flex flex-row items-center justify-center px-[20px] py-[8px] bg-[#fafafa] fixed top-0 z-[800] w-screen">
+        <!-- for desktop  -->
+        <img src="https://imgur.com/BqOCZNB.png" class="w-[200px]" alt="" routerLink="/Home">
+        <ul class="w-[100%] flex justify-end items-center">
+                <li class="h-[50px] max-md:hidden "><a
+                                class="h-[100%] p-[0_30px] flex items-center hover:text-[#49B1E9] font-medium text-[#1e293b] "
+                                routerLink="/Home" routerLinkActive="active">HOME</a></li>
+                <li class="h-[50px] max-md:hidden "><a
+                                class="h-[100%] p-[0_30px] flex items-center hover:text-[#49B1E9] font-medium text-[#1e293b] "
+                                routerLink="/about" routerLinkActive="active">ABOUT US</a></li>
+                <li class="h-[50px] max-md:hidden "><a
+                                class="h-[100%] p-[0_30px] flex items-center hover:text-[#49B1E9] font-medium text-[#1e293b] "
+                                routerLink="/careers" routerLinkActive="active">CAREERS</a></li>
+                <li class="h-[50px] max-md:hidden "><a
+                                class="h-[100%] p-[0_30px] flex items-center hover:text-[#49B1E9] font-medium text-[#1e293b] "
+                                routerLink="/contact" routerLinkActive="active">CONTACT US</a></li>
+
+                <!-- condintion for login and logout showing status -->
+                @if (authService.isAuthenticated()) {
+                <li class=" max-md:hidden" (click)="authService.logout()"><button (click)="LogOut()"
+                                class="h-[100%] p-[6px_20px] flex items-center border-[1px] font-bold border-[#246ec8] rounded-[3px] bg-[#246ec8] text-slate-50">LogOut</button>
+                </li>
+                }@else{
+                <li class=" max-md:hidden"><button
+                                class="h-[100%] p-[6px_20px] flex items-center border-[1px] font-bold border-[#246ec8] rounded-[3px] bg-[#246ec8] text-slate-50"
+                                (click)="goTologin()">LOGIN</button></li>
+
+                }
+
+                <!-- <li class=" max-md:hidden"><button
+                class="h-[100%] p-[6px_20px] flex items-center border-[1px] font-bold border-black rounded-[3px]"
+                routerLink="/SignUp" routerLinkActive="active">Sign Up</button></li> -->
+                <li (click)="showSidebar()" class="md:hidden text-[#246ec8]"><i class="fa fa-bars text-[30px]"
+                                aria-hidden="true"></i></li>
+        </ul>
+        <!-- for mobile screen  -->
+        <ul (click)="hideSidebar()"
+                class="sidebar backdrop-blur-lg max-sm:w-[100%] hidden fixed top-0 right-0 h-[100vh] w-[250px] z-[999] text-white bg-black/50  flex-col items-start justify-start pt-[30px] backdrop:blur-[10px]">
+                <li><a class="h-[100%] p-[0_30px] flex items-center" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                                        height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                        <path
+                                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                </svg></a></li>
+                <li class="h-[50px] "><a class="h-[100%] p-[0_30px] flex items-center " routerLink="/Home"
+                                routerLinkActive="active">HOME</a></li>
+                <li class="h-[50px] "><a class="h-[100%] p-[0_30px] flex items-center " routerLink="/about"
+                                routerLinkActive="active">ABOUT US</a></li>
+                <li class="h-[50px] "><a class="h-[100%] p-[0_30px] flex items-center " routerLink="/careers"
+                                routerLinkActive="active">CAREERS</a></li>
+                <li class="h-[50px] "><a class="h-[100%] p-[0_30px] flex items-center " routerLink="/contact"
+                                routerLinkActive="active">CONTACT US</a></li>
+                @if (authService.isAuthenticated()) {
+
+                <li class="h-[50px] "><a class="h-[100%] p-[0_30px] flex items-center " routerLink="/Home"
+                                (click)="authService.logout()" routerLinkActive="active">LOGOUT</a></li>
+                }@else{
+
+                <li class="h-[50px] "><a class="h-[100%] p-[0_30px] flex items-center " routerLink="/login/userlogin"
+                                routerLinkActive="active">LOGIN</a></li>
+                }
+        </ul>
+</nav>

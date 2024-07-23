@@ -1,0 +1,69 @@
+<footer>
+  <div class="bg-gradient-to-t from-blue-950 to-blue-900">
+    <!-- footer div   -->
+    <div class="flex flex-wrap max-w-[1320px] mx-auto text-[#ADB7C5]">
+      <!-- first div  -->
+      <div class="flex flex-col px-[20px]">
+        <h1 class="footer_header">GET A QUOTE</h1>
+
+        <div class="flex flex-row items-start pb-[5px]" *ngFor="let contact of contacts">
+          <img [src]="contact.Img" class="w-[26px] mr-[10px] h-auto" alt="">
+          <span class="text-[15px]">{{ contact.Contact}}</span>
+        </div>
+      </div>
+      <!-- second div  -->
+      <div class="flex flex-col px-[20px] ">
+        <h1 class="footer_header">QUICK LINK</h1>
+        <div *ngFor="let l of links" class="pb-[5px]">
+          <p class="text-[15px]">{{l.link}}</p>
+        </div>
+      </div>
+      <!-- third div  -->
+      <div class="flex flex-col px-[20px] ">
+        <h1 class="footer_header">HIRE DEDICATED TEAM</h1>
+        <!-- tech main div  -->
+        <div *ngFor="let t of tech" class="grid grid-cols-2 max-sm:grid-cols-1 gap-x-5 gap-y-2 pb-[5px]">
+          <div class="flex items-center">
+            <p class="text-[15px]">{{t.first}}</p>
+          </div>
+          <div class="flex items-center">
+            <p class="text-[15px]">{{t.second}}</p>
+          </div>
+        </div>
+      </div>
+      <!-- fourth div  -->
+      <div class="flex flex-col px-[20px] ">
+        <h1 class="footer_header">GLOBAL LOCATIONS</h1>
+        <div class="">
+          <p class="footer_fourth_div_paragraph">SentientGeeks (Canada)</p>
+          <p class="footer_fourth_div_paragraph">5484 Tomken Road,</p>
+          <p class="footer_fourth_div_paragraph">Unit 32 Mississauga,</p>
+          <p class="footer_fourth_div_paragraph">Ontario Canada L4W 2Z6</p>
+          <p class="footer_fourth_div_paragraph">SentientGeeks (India)</p>
+          <p class="footer_fourth_div_paragraph">906, Webel IT Park, Tower I,</p>
+          <p class="footer_fourth_div_paragraph">BN Block, Sector V, Kolkata – 700091</p>
+        </div>
+      </div>
+    </div>
+    <div class="border-[1px] border-[#ACB6C4] w-screen mt-[60px]"></div>
+    <!-- footer last portion  -->
+    <div
+      class="flex md:flex-row flex-col items-center text-center max-w-[1320px] mx-auto py-[15px] justify-between px-[20px]">
+      <div>
+        <p class="text-[#ADB7C5] text-[15px]">COPYRIGHTS 2022 © SENTIENTGEEKS SOFTWARE & CONSULTANCY PVT. LTD.</p>
+      </div>
+      <div class="flex flex-row text-white items-center justify-center space-x-2">
+        <p class="font-normal">Follow Us:</p>
+        <div class="flex items-center justify-center space-x-2">
+          <i class="fa fa-linkedin border-[2px] border-white rounded-[50%]  p-[20px] w-[20px] h-[20px] flex justify-center items-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-facebook border-[2px] border-white rounded-[50%]  p-[20px] w-[20px] h-[20px] flex justify-center items-center"
+            aria-hidden="true"></i>
+          <i class="fa fa-youtube-play border-[2px] border-white rounded-[50%]  p-[20px] w-[20px] h-[20px] flex justify-center items-center"
+            aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>

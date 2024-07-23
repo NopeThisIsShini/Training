@@ -1,0 +1,1 @@
+export type Details ={ name:string,email:string,phnumber:string, cv:File}

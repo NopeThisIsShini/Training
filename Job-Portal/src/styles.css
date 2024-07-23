@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+*{
+   
+}
+@tailwind components;
+
+.footer_header{
+    @apply p-[20px_0px] text-[20px] font-bold text-white
+}
+.footer_fourth_div_paragraph{
+    @apply pb-[5px] text-[15px]
+}
+@tailwind utilities;
