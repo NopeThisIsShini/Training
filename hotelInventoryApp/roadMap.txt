@@ -1,0 +1,21 @@
+Built-In Pipes
+
+UpperCasePipe
+LowerCasePipe
+CurrencyPipe
+DecimalPipe
+PercentPipe
+JsonPipe
+SlicePipe
+AsyncPipe
+
+LifeCycle Hooks
+
+ngOnChanges
+ngOnInit
+ngDoCheck
+ngAfterContentInit
+ngAfterContentChecked
+ngAfterViewInit
+ngAfterViewChecked
+ngOnDestroy

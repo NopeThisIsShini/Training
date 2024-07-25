@@ -1,0 +1,18 @@
+<!-- Directive are use to change the dehavior and appearance of DOM element. -->
+<!-- Directives can implement all lifecycle hooks. -->
+<!-- Directives can not have template. -->
+<!-- Directive Directive  -->
+<!--  1. Structural Directive -->
+<!--  2. Attribute Directive  -->
+<app-header></app-header>
+<div><button (click)="addRoom()">Add Room</button></div>
+<!-- ngif directive  -->
+<div *ngIf="rooms.availableRooms > 0 ">
+    <!-- room list
+    {{roomList}} -->
+    <app-rooms-list [rooms]="roomList"  [title]="title"
+    (selectedRoom)="selectRoom($event)"></app-rooms-list>
+   
+</div>
+
+<div ><button (click)="toggle()">Toggle</button></div>
